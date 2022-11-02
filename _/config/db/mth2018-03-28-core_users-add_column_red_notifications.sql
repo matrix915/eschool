@@ -1,0 +1,1 @@
+ALTER TABLE `core_users` ADD COLUMN `red_notifications` VARCHAR(90) NULL AFTER `red_announcements`;

@@ -1,0 +1,1 @@
+ALTER TABLE `mth_withdrawal` ADD COLUMN `effective_date` DATETIME NULL DEFAULT NULL;

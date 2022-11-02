@@ -1,0 +1,11 @@
+body.admin {
+    background-image: url('/_/includes/img/admin-bg-green.jpg');
+}
+
+body.popup {
+    background-image: none;
+}
+
+.bg {
+    background-image: url(images/bg/top-green.png) !IMPORTANT;
+}

@@ -1,0 +1,1 @@
+ALTER TABLE yoda_student_homeroom ADD date_assigned DATETIME NOT NULL ;

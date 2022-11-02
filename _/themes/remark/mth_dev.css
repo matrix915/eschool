@@ -1,0 +1,15 @@
+.site-navbar.navbar-inverse .navbar-container{
+    background-color: #ff9800 !important;
+}
+
+.page-home-page:before{
+    background-image: none !important;
+}
+
+.page-login-page:before{
+    background-image: none !important;
+}
+
+.layout-full .page {
+    background-color: #ff9800 !important;
+}

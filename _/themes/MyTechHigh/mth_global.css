@@ -1,0 +1,294 @@
+/*
+    Created on : Dec 31, 2013, 2:55:57 PM
+    Author     : abe
+*/
+
+.content-left {
+    clear: left;
+    float: left;
+    width: 500px;
+    max-width: 100%;
+    margin-right: 4%;
+}
+
+.content-right {
+    float: left;
+    width: 500px;
+    max-width: 100%;
+}
+
+#mth_people_edit, #mth_packet_edit, #mth_schedule-edit{
+    width: 80%;
+}
+[id^="mth_schedule-edit"]{
+    width: 80% !important;
+}
+
+input[type="button"].iframe-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    z-index: 9;
+    margin: 0;
+}
+
+fieldset {
+    border: solid 1px #ddd;
+    border-color: rgba(0, 0, 0, .1);
+    padding: 10px 4%;
+    margin: 20px 0;
+}
+
+fieldset legend {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: -5px;
+}
+
+.borderLess {
+    border-color: rgba(255, 255, 255, 0) !IMPORTANT;
+    box-shadow: none !IMPORTANT;
+    background: transparent !IMPORTANT;
+    -webkit-appearance: none !IMPORTANT;
+    padding-left: 10px;
+}
+
+.checkbox-block-label {
+    margin-left: 20px;
+    text-indent: -20px;
+}
+
+.checkbox-block-label * {
+    text-indent: 0;
+}
+
+.mth_phone_name {
+    max-width: 25%;
+}
+
+.mth_phone_number {
+    max-width: 40%;
+}
+
+.mth_phone_ext {
+    max-width: 10%;
+}
+
+.sub-item, .mth_phone {
+    border-bottom: solid 1px #eee;
+    padding: 5px 0 5px 10px;
+    margin: 0;
+}
+
+.mth_address p {
+    margin: 5px 0;
+}
+
+.sub-item a {
+    text-decoration: none;
+    margin: 0 0 0 15px;
+    opacity: .1;
+    transition: opacity .25s;
+    font-weight: 300;
+}
+
+.sub-item:hover a {
+    opacity: .99
+}
+
+.new-item-link {
+    display: block;
+    display: inline-block;
+    padding: 6px 0 6px 10px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+hr {
+    clear: both;
+}
+
+.mth_schedule-table td, .mth_schedule-table th {
+    vertical-align: top;
+}
+
+table.mth_student-stats_table td {
+    text-align: right !IMPORTANT;
+}
+
+/* schedules */
+
+table.mth_schedule-table {
+    width: 100%;
+}
+
+table.mth_schedule-table tr td, table.mth_schedule-table tr th {
+    padding: 5px 10px 15px;
+    background-color: #fff;
+}
+
+table.mth_schedule-table tr th {
+    padding-left: 20px;
+}
+
+.mth_schedule-table h3 {
+    padding: 5px 10px;
+    margin: -5px -10px 5px;
+    background: #eee;
+    border-top: solid 2px #ddd;
+    border-bottom: solid 1px #ddd;
+    font-size: 1em;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+table.mth_schedule-table tr th h3 {
+    padding-left: 20px;
+    margin-left: -20px;
+}
+
+.mth_schedule-table .mth_schedule_period-empty {
+    font-style: italic;
+    color: #ccc;
+}
+
+.mth_schedule-table .mth_schedule_period-empty:hover {
+    color: #F15E22;
+}
+
+.mth_schedule_period-button_bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    background: #fff;
+    background-color: rgba(255, 255, 255, .85);
+    border-top: solid 1px #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.mth_schedule-table .mth_schedule_period-uneditable {
+    cursor: text;
+    text-decoration: none;
+    color: #000;
+}
+
+.mth_schedule-table .mth_schedule_period-row-requires_change td,
+.mth_schedule-table .mth_schedule_period-row-requires_change th,
+.mth_schedule-table .mth_schedule_period-row-requires_change h3,
+.mth_schedule-table .mth_schedule_period-row-requires_change a {
+    color: red;
+}
+
+.mth_schedule-table .mth_schedule_period-row-changed td,
+.mth_schedule-table .mth_schedule_period-row-changed th,
+.mth_schedule-table .mth_schedule_period-row-changed h3,
+.mth_schedule-table .mth_schedule_period-row-changed a {
+    color: #990099;
+}
+
+#mth_schedule_period-edit {
+    width: 600px;
+    position: fixed;
+    right: 5%;
+}
+
+.global_popup_iframe {
+    width: 600px;
+    height: 90%;
+}
+
+.mth_schedule-collapse > div {
+    max-width: 400px;
+    max-height: 4.5em;
+    overflow: hidden;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.mth_schedule-collapse > div + a:after {
+    content: "(expand)";
+}
+
+.mth_schedule-collapse > div.expanded {
+    max-height: none;
+}
+
+.mth_schedule-collapse > div.expanded + a:after {
+    content: "(collapse)";
+}
+
+#mth_schedule-change {
+    width: 600px;
+}
+
+.mth_schedule_second_sem_link {
+    font-weight: 700;
+}
+
+body.admin #site-nav li a {
+    padding: 4px 20px;
+}
+
+img[src="/_/includes/img/loading.gif"] {
+    border-radius: 30px;
+}
+
+.fixed-button-bar{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,.5);
+    border-top: solid 1px rgba(0,0,0,.2);
+    padding: 10px 20px;
+}
+
+.admin .fixed-button-bar{
+    padding-left: 200px;
+}
+
+
+ul.tabs{
+    list-style: none;
+    padding: 0 5px;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+    margin: 0;
+    box-shadow: 0 1px 1px rgba(255,255,255,.3),
+        0 2px 1px rgba(255,255,255,.3),
+        0 3px 1px rgba(255,255,255,.3),
+        0 4px 1px rgba(255,255,255,.3),
+        0 5px 1px rgba(255,255,255,.3);
+}
+#main-content>ul.tabs{
+    margin: 0 -60px;
+    padding: 0 60px;
+}
+ul.tabs li{
+    display: inline-block;
+    margin-bottom: -1px;
+    border:solid 1px transparent;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    padding: 0 5px;
+    background: transparent;
+}
+ul.tabs li:hover{
+    border-color: rgba(0,0,0,.1);
+}
+ul.tabs li.selected{
+    border-color: rgba(0,0,0,.2);
+    background: #fff;
+}
+ul.tabs li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}

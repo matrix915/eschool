@@ -1,0 +1,3 @@
+ALTER TABLE `mth_provider`
+	ADD COLUMN `popup` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0' AFTER `diploma_only`,
+	ADD COLUMN `popup_content` TEXT NULL DEFAULT NULL AFTER `popup`;

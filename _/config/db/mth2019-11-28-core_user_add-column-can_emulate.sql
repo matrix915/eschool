@@ -1,0 +1,2 @@
+ALTER TABLE `core_users`
+	ADD COLUMN `can_emulate` TINYINT(3) NULL DEFAULT 0;

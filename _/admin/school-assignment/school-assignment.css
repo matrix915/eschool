@@ -1,0 +1,29 @@
+/* #school_assignment_filter_block{
+    padding: 10px;
+}
+#school_assignment_filter_block fieldset{
+    float: left;
+    padding: 10px;
+    margin:0 10px 0 0;
+    min-width: 15%;
+    box-sizing: border-box;
+    max-height: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+#school_assignment_filter_block fieldset label{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+#school_assignment_filter_block fieldset{
+    max-height: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#missing_data{
+    background: #fcc;
+    border: solid 3px #900;
+    padding: 10px 40px;
+}

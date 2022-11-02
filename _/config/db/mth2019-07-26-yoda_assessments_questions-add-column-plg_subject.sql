@@ -1,0 +1,1 @@
+ALTER TABLE `yoda_assessment_question` ADD COLUMN `plg_subject` VARCHAR(50) NULL DEFAULT NULL;

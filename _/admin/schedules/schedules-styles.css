@@ -1,0 +1,83 @@
+#mth_schedule-table tbody td {
+    font-size: 12px;
+    line-height: 1.3em;
+}
+
+#mth_schedule-table_info {
+    display: none;
+}
+
+a.mth_schedule_period-requires_change, a.mth_schedule-edit_link-Updates_required {
+    color: red !important;
+}
+
+a.mth_schedule-edit_link-Resubmitted, a.mth_schedule_period-changed {
+    color: #990099 !important;
+}
+
+a.mth_schedule-edit_link-Submitted {
+    color: #009900 !important;
+}
+
+#mth_schedule-table a{
+    color: #1e88e5;
+}
+
+/* #mth_schedule-count {
+    position: relative;
+    z-index: 6;
+    margin-right: 240px;
+    clear: both;
+} */
+
+#mth_schedule-count label {
+    display: inline;
+    margin: 0 6px;
+}
+
+h1#page-title {
+    float: left;
+}
+
+h1#page-title + .button {
+    margin: 30px;
+    display: inline-block;
+}
+
+#mth_schedule-table small {
+    display: block;
+}
+
+tr.status-Resubmitted,
+tr.status-Submitted,
+tr.status-Updates_required,
+tr.status-Unlocked,
+tr.status-Accepted,
+tr.status-Started,
+tr.status-Deleted,
+tr.status-Pending_Unlock,
+tr.status-Not_Started {
+    display: none;
+}
+
+#main-content.show-Resubmitted tr.status-Resubmitted,
+#main-content.show-Submitted tr.status-Submitted,
+#main-content.show-Updates_required tr.status-Updates_required,
+#main-content.show-Unlocked tr.status-Unlocked,
+#main-content.show-Accepted tr.status-Accepted,
+#main-content.show-Started tr.status-Started, 
+#main-content.show-Pending_Unlock tr.status-Pending_Unlock,
+#main-content.show-Not_Started tr.status-Not_Started
+{
+    display: table-row;
+}
+
+.btn-filter {
+    width: 100px !important;
+    float: right;
+}
+
+#provider {
+    max-height: 30rem;
+    overflow-y: scroll;
+}

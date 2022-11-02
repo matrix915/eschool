@@ -1,0 +1,1 @@
+ALTER TABLE `mth_reimbursement` ADD COLUMN `type_tag` TINYINT NULL DEFAULT NULL;

@@ -1,0 +1,11 @@
+{
+    "require": {
+        "kunalvarma05/dropbox-php-sdk": "^0.2.0",
+        "aws/aws-sdk-php": "^3.28",
+        "phpoffice/phpspreadsheet": "^1.8",
+        "bugsnag/bugsnag": "^3.0",
+        "dompdf/dompdf": "^0.8.5",
+        "firebase/php-jwt": "^5.2",
+        "vlucas/phpdotenv": "^4.2.2"
+    }
+}

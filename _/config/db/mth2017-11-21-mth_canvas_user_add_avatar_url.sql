@@ -1,0 +1,1 @@
+ALTER TABLE mth_canvas_user ADD avatar_url varchar(250) NULL;

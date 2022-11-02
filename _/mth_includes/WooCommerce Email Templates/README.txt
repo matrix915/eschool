@@ -1,0 +1,1 @@
+These templates should be uploaded to the active wordpress theme in the folder woocommerce/emails 

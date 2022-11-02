@@ -1,0 +1,1 @@
+ALTER TABLE mth_packet ADD understands_sped_scheduling   tinyint(3) UNSIGNED NOT NULL DEFAULT '0';

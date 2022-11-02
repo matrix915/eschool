@@ -1,0 +1,20 @@
+CREATE TABLE `mth_immunization_settings` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(40) NULL,
+	`min_grade_level` VARCHAR(5) NULL,
+	`max_grade_level` VARCHAR(5) NULL,
+	`min_school_year_required` INT NOT NULL,
+	`max_school_year_required` INT NOT NULL,
+	`immunity_allowed` INT NOT NULL,
+	`exempt_update` INT NOT NULL,
+	`level_exempt_update` LONGTEXT NULL DEFAULT NULL,
+	`consecutive_vaccine` INT NOT NULL,
+	`min_spacing_interval` INT NOT NULL,
+    `min_spacing_date` TINYINT(1) NULL,
+	`max_spacing_interval` INT NOT NULL,
+    `max_spacing_date` TINYINT(1) NULL,
+	`email_update_template` VARCHAR(40) NULL,
+	`date_created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`date_updated` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+	PRIMARY KEY (`id`)
+);

@@ -1,0 +1,4 @@
+ALTER TABLE `mth_subject`
+    ADD COLUMN `archived` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `mth_subject`
+    ADD COLUMN `available` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0';

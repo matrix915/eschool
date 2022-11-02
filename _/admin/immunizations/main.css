@@ -1,0 +1,76 @@
+.mth_immunization-row div, .mth_immunization-row div a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mth_immunization-row small {
+    display: block;
+    line-height: 12px;
+    font-size: 10px;
+    color: #666;
+}
+
+.mth_provider_course-map {
+    line-height: 12px;
+}
+
+.mth_provider_course-map small {
+    font-size: 10px;
+    color: #666;
+    white-space: nowrap;
+}
+
+.mth_provider_course-map small:after {
+    content: ', ';
+}
+
+.mth_provider_course-map small:last-child:after {
+    display: none;
+}
+
+.mth_immunization-row a {
+    text-decoration: none;
+}
+
+.mth_immunization_toggle {
+    display: block;
+    position: relative;
+    padding-left: 16px;
+}
+
+.mth_immunization_toggle:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border: 6px solid transparent;
+    border-left-color: #05A;
+}
+
+.mth_subject-other .mth_immunization_toggle:after {
+    display: none;
+}
+
+.mth_subject-expanded .mth_immunization_toggle:after {
+    border-left-color: transparent;
+    border-top-color: #05A;
+    top: 8px;
+    left: 0px;
+}
+
+.mth_course-unavailable a, .mth_course-available a {
+    text-decoration: none;
+}
+
+.mth_course-unavailable a, .mth_course-unavailable, .mth_provider-unavailable, .mth_provider-unavailable a {
+    color: #999 !important;
+}
+.mth_immunization{
+    width: 300px !important;
+}
+
+.list-group-item {
+    text-decoration: none !important;
+    border-bottom: 2px solid gray !important;
+}

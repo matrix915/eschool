@@ -1,0 +1,1 @@
+ALTER TABLE `mth_packet` ADD COLUMN `military_branch` VARCHAR(60) NULL DEFAULT NULL;

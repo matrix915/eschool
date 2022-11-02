@@ -1,0 +1,25 @@
+*.DS_Store
+wordpress/*
+.env
+_/uploads/*
+_/includes/cache/*
+_/config/db/installed.txt
+_/config/config.php
+nbproject/private/*
+_/mth_files/2*
+/_/cron_last_run
+/_/cron4_last_run
+/_/cron/archiver
+/_/cron/homeroom_marker
+/_/cron/intervention_reminder
+_/admin/people/csv/file_*
+.idea/*
+deploy-*
+_/mth_files/pdf-tool/2*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.env
+sql.txt

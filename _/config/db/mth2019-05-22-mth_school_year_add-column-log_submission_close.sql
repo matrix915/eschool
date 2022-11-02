@@ -1,0 +1,1 @@
+ALTER TABLE `mth_schoolyear` ADD COLUMN `log_submission_close` DATE NULL DEFAULT NULL;

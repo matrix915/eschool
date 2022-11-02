@@ -1,0 +1,32 @@
+/*
+    Created on : Jan 6, 2014, 12:57:02 PM
+    Author     : abe
+*/
+
+body.admin_people_edit {
+    padding-top: 85px;
+}
+
+th, td {
+    vertical-align: top;
+}
+
+#editPersonForm table.formatted th {
+    padding-top: 10px;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 15px 6%;
+    background: #fff;
+    background-color: rgba(255, 255, 255, .9);
+    border-bottom: solid 1px #eee;
+}
+
+input, select {
+    font-size: 14px;
+}

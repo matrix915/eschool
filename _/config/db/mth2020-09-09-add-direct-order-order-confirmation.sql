@@ -1,0 +1,6 @@
+ALTER TABLE `mth_reimbursement`
+    ADD COLUMN `direct_order_confirmation` TEXT NULL DEFAULT NULL;
+
+
+INSERT INTO `core_settings` (`name`, `category`, `title`, `type`, `value`, `description`, `user_changeable`, `date_changed`) VALUES ('directOrderOrderConfirmationEmailContent', 'DirectOrders', 'Order Confirmation Email Content', 'HTML', '<p>Hi [PARENT_FIRST_NAME],</p><p>Your Request for a Direct Order has been placed:</p><p>  <b>Submitted:</b> [DATE_DIRECT_ORDER_SUBMITTED]<br />  <b>Provider:</b> [DIRECT_ORDER_WISHLIST_PROVIDER]<br />  <b>Wishlist Link:</b> [DIRECT_ORDER_WISHLIST_LINK]<br />  <b>Amount:</b> $[DIRECT_ORDER_AMOUNT]<br />  <b>Student:</b> [STUDENT_FULL_NAME]<br />  [STUDENT_SCHEDULE_PERIOD_DESCRIPTION] <br /><b>Order Confirmation:</b> &nbsp;[DIRECT_ORDER_CONFIRMATION]</p><br /><b>My Tech High Team Member:</b> &nbsp;[ADMIN_USER_FULL_NAME] -<br /> [ADMIN_USER_EMAIL]</p><p>My Tech High</p>', '<p>Direct Orders Order Confirmed Email Content</p>', 1, '2020-09-10 14:58:55');
+INSERT INTO `core_settings` (`name`, `category`, `title`, `type`, `value`, `description`, `user_changeable`, `date_changed`) VALUES ('directOrderOrderConfirmationEmailSubject', 'DirectOrders', 'Order Confirmation Email Subject', 'Text', 'Direct Order Placed', '<p>Email subject for Direct Order Order Confirmation email</p>', 1, '2020-09-10 14:42:40');

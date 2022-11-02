@@ -1,0 +1,1 @@
+ALTER TABLE `yoda_assessment_question` ADD COLUMN `number` INT(5) NULL;

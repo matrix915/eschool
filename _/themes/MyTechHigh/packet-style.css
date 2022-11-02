@@ -1,0 +1,119 @@
+/* 
+    Created on : Jan 28, 2014, 2:37:29 PM
+    Author     : abe
+*/
+
+.form-progress {
+    overflow: auto;
+    list-style: none;
+    margin: 30px 0 20px;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-progress li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    display: block;
+    background: transparent url(images/packet-imgs/progress.png) top right no-repeat;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+
+.form-progress li a {
+    margin: 0 35px 0 0;
+    text-decoration: none;
+    color: #F15E22;
+    display: block;
+}
+
+.form-progress li.selected {
+    background-image: url(images/packet-imgs/progress-selected.png);
+}
+
+.form-progress li.selected a {
+    background-color: #F15E22;
+    color: #fff;
+    font-weight: 700;
+    z-index: 2;
+    position: relative;
+    margin-left: 5px;
+}
+
+.form-progress li.selected span {
+    display: block;
+    height: 45px;
+    width: 35px;
+    background: url(images/packet-imgs/progress-end.png) no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    z-index: 1;
+}
+
+.form-progress li:last-child {
+    background: none;
+}
+
+.form-progress li a:hover {
+    font-weight: 700;
+}
+
+.file-block {
+    padding: 1px 20px 20px;
+    border: solid 1px #ddd;
+    border-color: rgba(0, 0, 0, .1);
+    margin: 0 0 40px;
+    overflow: auto;
+}
+
+.fileinput-button {
+    padding: 10px 0;
+    display: block;
+    overflow: hidden;
+}
+
+.upload_progress {
+    border: solid 1px #ddd;
+}
+
+.upload_progress-bar {
+    background-color: #ddd;
+    height: 20px;
+}
+
+#theSubmitButton:disabled {
+    cursor: wait;
+}
+
+form {
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 770px) {
+    .form-progress li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-progress li {
+        font-size: 9px;
+        background: none;
+        overflow: hidden;
+    }
+
+    .form-progress li.selected span {
+        display: none;
+    }
+
+    .form-progress li a, .form-progress li.selected a {
+        margin: 0;
+    }
+}

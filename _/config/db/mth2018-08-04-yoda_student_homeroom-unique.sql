@@ -1,0 +1,1 @@
+ALTER TABLE `yoda_student_homeroom` ADD UNIQUE `student_year`(`student_id`, `school_year_id`);

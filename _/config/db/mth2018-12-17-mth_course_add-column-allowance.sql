@@ -1,0 +1,2 @@
+ALTER TABLE `mth_course`
+	ADD COLUMN `allowance` FLOAT NULL DEFAULT 0;

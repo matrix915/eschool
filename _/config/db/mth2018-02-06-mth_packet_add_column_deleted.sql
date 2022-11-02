@@ -1,0 +1,2 @@
+ALTER TABLE `mth_packet`
+	ADD COLUMN `deleted` TINYINT NULL DEFAULT '0';

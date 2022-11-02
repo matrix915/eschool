@@ -1,0 +1,1 @@
+ALTER TABLE core_users ADD red_announcements  INT NULL DEFAULT 0;

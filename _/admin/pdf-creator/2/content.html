@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>USIR</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        body {
+            background-size: 11in 8.5in;
+            height: 8.5in;
+            width: 11in;
+        }
+
+        table.student-parent-info {
+            margin-top: 1.885in;
+        }
+
+        .line-one td.student-name {
+            padding-left: 1.625in;
+            width: 4.125in;
+        }
+
+        .line-one td.student-male {
+            padding-left: .9in;
+            width: .25in;
+        }
+
+        .line-one td.student-female {
+            padding-left: .3125in; /*5/16*/
+            width: .25in;
+        }
+
+        .line-one td.student-dob {
+            padding-left: 1.5in;
+        }
+
+        .line-two td.parent-name {
+            padding-top: .0625in;
+            padding-left: 2.5in;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .vaccine-table-div {
+            width: 7.53in;
+            overflow: hidden;
+            display: inline-block;
+            margin-top: .625in;
+            vertical-align: top;
+        }
+
+        .vaccine-table tr > td:first-child {
+            padding-left: 3.12in;
+        }
+
+        .vaccine-table td {
+            width: .855in;
+            height: .347in;
+            vertical-align: middle;
+        }
+
+        .vaccine-table td div {
+            width: .855in;
+            display: inline-block;
+            overflow: hidden;
+            max-height: .347in;
+        }
+
+        .right-table-div {
+            display: inline-block;
+            vertical-align: top;
+            width: 3.3in;
+            overflow: hidden;
+            /* border:1px solid blue; */
+        }
+
+        .right-table {
+            margin-top: .13in;
+            margin-left: .25in;
+            /* border:1px solid red; */
+        }
+
+        .right-table td {
+            height: .12in;
+        }
+
+        .right-table .date, .right-table .conditional_date {
+            padding-left: 2.25in;
+            height: .08in;
+        }
+
+        .right-table .immunized {
+            padding-left: .38in;
+            height: .08in;
+        }
+
+        .right-table .exempt {
+            padding-top: .127in;
+            padding-left: .38in;
+        }
+
+        .right-table .had_desease{
+            padding-left: 1.36in;
+            padding-top: 1.47in;
+        }
+    </style>
+</head>
+<body>
+
+<img src="[PATH]img.png" style="margin-bottom: -100%; width: 11in; height: 8.5in">
+
+<table class="student-parent-info">
+    <tr class="line-one">
+        <td class="student-name">
+            [CONTENT.Student First] [CONTENT.Student Last]
+        </td>
+        <td class="student-male">
+            [CONTENT.Gender=Male?X:]
+        </td>
+        <td class="student-female">
+            [CONTENT.Gender=Female?X:]
+        </td>
+        <td class="student-dob">
+            [CONTENT.DOB]
+        </td>
+    </tr>
+    <tr class="line-two">
+        <td class="parent-name">
+            [CONTENT.Parent First] [CONTENT.Parent Last]
+        </td>
+    </tr>
+</table>
+
+<div class="vaccine-table-div">
+    <table class="vaccine-table">
+        <tr>
+            <td>
+                <div>[CONTENT.DTap 1]</div>
+            </td>
+            <td>
+                <div>[CONTENT.DTap 2]</div>
+            </td>
+            <td>
+                <div>[CONTENT.DTap 3]</div>
+            </td>
+            <td>
+                <div>[CONTENT.DTap 4]</div>
+            </td>
+            <td>
+                <div>[CONTENT.DTap 5]</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <div>[CONTENT.Tdap]</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>[CONTENT.Polio 1]</div>
+            </td>
+            <td>
+                <div>[CONTENT.Polio 2]</div>
+            </td>
+            <td>
+                <div>[CONTENT.Polio 3]</div>
+            </td>
+            <td colspan="2">
+                <div>[CONTENT.Polio 4]</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <div>[CONTENT.MMR 1]</div>
+            </td>
+            <td colspan="4">
+                <div>[CONTENT.MMR 2]</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>[CONTENT.Hep B 1]</div>
+            </td>
+            <td>
+                <div>[CONTENT.Hep B 2]</div>
+            </td>
+            <td colspan="3">
+                <div>[CONTENT.Hep B 3]</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>[CONTENT.Var 1]</div>
+            </td>
+            <td colspan="4">
+                <div>[CONTENT.Var 2]</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>[CONTENT.Hep A 1]</div>
+            </td>
+            <td colspan="4">
+                <div>[CONTENT.Hep A 2]</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <div>[CONTENT.Menin]</div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="right-table-div">
+    <table class="right-table">
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="exempt">[CONTENT.Ready to Enroll=Exempt?x:&nbsp;]</td>
+        </tr>
+        <tr>
+            <td class="had_desease">
+                [CONTENT.Var 1=%Had disease%?x:]
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+body {
+    font-family: verdana, sans-serif;
+}
+
+label {
+    display: block;
+}
+
+form small {
+    display: block;
+}
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub {
+    top: 0.4em;
+}
+
+#core-global-user-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #ddd url(img/admin-bg.jpg) fixed;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2), inset 0 5px 5px rgba(0, 0, 0, .1), inset 0 10px 10px rgba(0, 0, 0, .1);
+    line-height: 35px;
+    font-size: 12px;
+    text-align: left;
+    border-top: solid 2px #777;
+    border-bottom: solid 2px #eee;
+}
+
+body.admin #core-global-user-menu {
+    border-bottom-color: rgba(256, 256, 256, .3);
+}
+
+#core-global-user-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+#core-global-user-menu .sf-menu a {
+    border: none;
+    border-right: 1px solid #888;
+    border-color: rgba(0, 0, 0, .1);
+    padding: 0 20px;
+}
+
+#core-global-user-menu .sf-menu li ul a {
+    border: none;
+}
+
+body.admin #core-global-user-menu .sf-menu a {
+    border-right: 1px solid #ddd;
+    border-color: rgba(256, 256, 256, .3);
+}
+
+#core-global-user-menu .sf-menu a.sf-with-ul {
+    padding-right: 30px;
+}
+
+#core-global-user-menu .sf-menu a:hover, #core-global-user-menu .sf-menu .sfHover > a {
+    background: #666;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+#core-global-user-menu li {
+    background: #eee;
+}
+
+#core-global-user-menu > ul > li {
+    background: none;
+}
+
+.cms_content-ContentEditLink {
+    float: right;
+}
+
+a {
+    cursor: pointer;
+}
+
+a img {
+    border: none;
+}
+
+#core-global-user-links {
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    border-left: 1px solid #888;
+    border-color: rgba(0, 0, 0, .1);
+    padding-left: 20px
+}
+
+body.admin #core-global-user-links {
+    border-left: 1px solid #ddd;
+    border-color: rgba(256, 256, 256, .3);
+}
+
+#core-global-user-links a {
+    padding: 0 20px 0 0;
+    text-decoration: none;
+
+}
+
+body.admin #core-global-user-login-link {
+    display: none;
+}
+
+.core-notify-erros {
+    border: solid 2px #c00;
+    background: #fcc;
+}
+
+.core-notify-messages {
+    border: solid 2px #0c0;
+    background: #cfc;
+}
+
+#global_popup_bg {
+    background: #000;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.global_popup {
+    max-width: 90%;
+    min-height: 100px;
+    max-height: 90%;
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px 6%;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0 0 100px #000;
+    position: relative;
+    top: 5%;
+}
+
+#global_confirm_popup {
+    text-align: right;
+}
+
+#global_confirm_popup > div {
+    padding: 50px 0;
+    text-align: left;
+}
+
+#global_confirm_popup input[type="button"] {
+    margin-left: 20px;
+}
+
+iframe {
+    border: none;
+}
+
+.global_popup iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.global_popup_iframe {
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    z-index: 9;
+    height: 80%;
+}
+
+.global_popup_iframe_full, .global_popup_iframe.global_popup_iframe_full {
+    width: 90%;
+    height: 90%;
+}
+
+#content_edit_popup {
+    padding: 0;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content_edit_popup iframe {
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.popupCloseX {
+    position: fixed;
+    background: #eee;
+    background-color: rgba(255, 255, 255, .7);
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 0 0 0 5px;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+}
+
+#global_waiting {
+    background: #fff url(img/loading.gif) center center no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    opacity: .6;
+    cursor: wait;
+}
+
+.waiting:after{
+    content: '';
+    background: #fff url(img/loading.gif) center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    opacity: .6;
+    cursor: wait;
+}
+
+.shy:after{
+    content: '';
+    background: #eceff1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    opacity: .6;
+}
+
+.div-table {
+    overflow: auto;
+    border-top: 1px solid #eee;
+}
+
+.div-table > div {
+    clear: left;
+    overflow: auto;
+    border-bottom: 1px solid #eee;
+    padding-left: 1%;
+}
+
+.div-table > div > div {
+    min-width: 50px;
+    width: 30%;
+    padding: 1% 0 1% 2%;
+    float: left;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+}
+
+.div-table > div > div:first-child {
+    padding-left: 1%;
+}
+
+input[type="button"].iframe-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    z-index: 9;
+    margin: 0;
+}
+
+/* SupperFish CSS **/
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sf-menu li {
+    position: relative;
+}
+
+.sf-menu ul {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.sf-menu > li {
+    float: left;
+}
+
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    visibility: visible;
+    opacity: .99;
+    min-width: 200px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    background: #fff;
+    z-index: 2;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: .75em 1em;
+    text-align: left;
+}
+
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+    float: left;
+    margin-bottom: 1em;
+}
+
+.sf-menu ul {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
+    min-width: 12em; /* allow long menu items to determine submenu width */
+    *width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+
+.sf-menu a {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    padding: .75em 1em;
+    text-decoration: none;
+    zoom: 1; /* IE7 */
+}
+
+.sf-menu a {
+    color: #13a;
+}
+
+.sf-menu li {
+    background: #BDD2FF;
+    white-space: nowrap; /* no need for Supersubs plugin */
+    *white-space: normal; /* ...unless you support IE7 (let it wrap) */
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.sf-menu ul li {
+    background: #AABDE6;
+}
+
+.sf-menu ul ul li {
+    background: #9AAEDB;
+}
+
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+    background: #CFDEFF;
+    /* only transition out, not in */
+    -webkit-transition: none;
+    transition: none;
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+    *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+    /* order of following 3 rules important for fallbacks to work */
+    border: 5px solid transparent;
+    border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+    border-top-color: rgba(255, 255, 255, .5);
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: white; /* IE8 fallback colour */
+}
+
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+    border-left-color: rgba(255, 255, 255, .5);
+}
+
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+    border-left-color: white;
+}
+
+/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+    width: 12em;
+    /* If you want the width of the closed menu to expand to its
+    widest top-level menu item (like its "Supersubs" submenus do),
+    replace the width rule above with the following two rules. */
+
+    /*
+    min-width: 12em;
+    *width: 12em;
+    */
+}
+
+.sf-vertical ul {
+    left: 100%;
+    top: 0;
+}
+
+.sf-vertical > li {
+    float: none;
+}
+
+.sf-vertical li {
+    width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+    margin-top: -5px;
+    margin-right: -3px;
+    border-color: transparent;
+    border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+    border-left-color: rgba(255, 255, 255, .5);
+}
+
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after,
+.sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
+.sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+    border-left-color: white;
+}
+
+.checkbox-block-label {
+    margin-left: 20px;
+    text-indent: -20px;
+}
+
+#credits {
+    text-align: center;
+    font-size: 12px;
+    margin: 50px 5%;
+}
+
+#credits a {
+    color: #fff;
+    text-decoration: none;
+    opacity: .3;
+    text-shadow: -1px -1px 1px #000;
+}
+
+.infoBox {
+    padding: 3% 6%;
+    border: dotted 1px #ccc;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+}
